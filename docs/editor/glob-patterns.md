@@ -5,7 +5,10 @@ MetaDescription: Visual Studio Code glob patterns reference
 ---
 # Glob Patterns Reference
 
-Visual Studio Code uses glob patterns in many components. Examples include setting file and folder includes/excludes in features such as [Search](/docs/editing/codebasics.md#advanced-search-options), hiding files from the File Explorer or marking them readonly, and setting up programming language-specific file associations.
+Visual Studio Code uses glob patterns in many components. Examples include set
+
+
+ting file and folder includes/excludes in features such as [Search](/docs/editing/codebasics.md#advanced-search-options), hiding files from the File Explorer or marking them readonly, and setting up programming language-specific file associations.
 
 ## Glob pattern syntax
 
@@ -36,3 +39,4 @@ We implemented our own [glob matching library](https://github.com/microsoft/vsco
 Make sure that on Windows you are using `/` to separate paths and not `\`. Glob patterns in VS Code require `/` for separating paths but they will both match on `/` and `\` in paths.
 
 If you're trying to literally match a special character like `[` or `]`, escape it by placing the special character inside square brackets (single-character range) to avoid it being interpreted in pattern matching. Backslashes do not escape them. For example, to match files under `src/routes/post/[id]/`, you would use the pattern `src/routes/post/[[]id[]]/**`.
+
